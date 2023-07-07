@@ -6,16 +6,16 @@ const Item = ({id, name, img, price, stock}) => {
         <div>
             <article class="card">
             <picture>
-                <img src={img} class="imgPeque" alt={name}/>
+                <img src={img} className="imgPeque" alt={name}/>
             </picture>
             <div class="card-body">
                 <header>
-                    <h5 class="card-title">
+                    <h5 className="card-title">
                         {name}
                     </h5>
                 </header>
                 
-                <section class="card-text">
+                <section className="card-text">
                     <p>
                         Precio :${price}
                     </p>

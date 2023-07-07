@@ -21,18 +21,18 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
 
     return(
         <div className="cartas">
-            <article class="card">
+            <article className="card">
             <picture>
-                <img src={img} class="imgPeque" alt={name}/>
+                <img src={img} className="imgPeque" alt={name}/>
             </picture>
             <div class="card-body">
                 <header>
-                    <h5 class="card-title">
+                    <h5 className="card-title">
                         {name}
                     </h5>
                 </header>
                 
-                <section class="card-text">
+                <section className="card-text">
                     <p>
                         Precio :${price}
                     </p>
