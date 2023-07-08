@@ -13,7 +13,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
         setQuantityAdded(quantity)
 
         const item = {
-            id, name, price
+            id, name, price, img
         }
 
         addItem(item, quantity)
@@ -25,7 +25,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
             <picture>
                 <img src={img} className="imgPeque" alt={name}/>
             </picture>
-            <div class="card-body">
+            <div className="card-body">
                 <header>
                     <h5 className="card-title">
                         {name}

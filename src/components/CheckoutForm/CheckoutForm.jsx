@@ -18,31 +18,31 @@ const CheckoutForm = ({ onCornfirm }) => {
     return (
         <div>
             <form onSubmit={handleConfirm}>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">
+                <div className="mb-3">
+                    <label for="formGroupExampleInput" className="form-label">
                           Nombre
                         <input
-                         type="text" class="form-control"
+                         type="text" className="form-control"
                          value={name}
                          onChange={({ target }) => setName(target.value)}
                          />
                     </label>
                 </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">
+                <div className="mb-3">
+                    <label for="formGroupExampleInput" className="form-label">
                           Telefono
                         <input
-                         type="text" class="form-control"
+                         type="text" className="form-control"
                          value={phone}
                          onChange={({ target }) => setPhone(target.value)}
                          />
                     </label>
                 </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">
+                <div className="mb-3">
+                    <label for="formGroupExampleInput" className="form-label">
                           Email
                         <input
-                         type="text" class="form-control"
+                         type="text" className="form-control"
                          value={email}
                          onChange={({ target }) => setEmail(target.value)}
                          />
