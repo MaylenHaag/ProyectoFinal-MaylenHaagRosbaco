@@ -23,66 +23,49 @@ const NavBar = () => {
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
             
-                  <NavLink to={`category/dermo`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >
-                    <a className="nav-link active " aria-current="page">
-                      Dermo
-                    </a>
+                  <NavLink to={`category/dermo`} class={({isActive}) => isActive ? 'ActiveOption' : 'Option'} className="nav-link active " aria-current="page">
+                    Dermo
                   </NavLink>
                     
                   </li>
                   <li className="nav-item">
             
-                  <NavLink to={`category/bebes`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >
-                    <a className="nav-link active" aria-current="page">
-                      Bebés
-                    </a>
+                  <NavLink to={`category/bebes`} class={({isActive}) => isActive ? 'ActiveOption' : 'Option'} className="nav-link active" aria-current="page">
+                    Bebés
                   </NavLink>
                   </li>
                   <li className="nav-item">
                   
-                  <NavLink to={`category/hogar`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >
-                    <a className="nav-link active" aria-current="page">
-                      Hogar
-                    </a>
+                  <NavLink to={`category/hogar`} class={({isActive}) => isActive ? 'ActiveOption' : 'Option'} className="nav-link active" aria-current="page">
+                    Hogar
                   </NavLink>
                   </li>
                   <li className="nav-item">
                   
-                  <NavLink to={`category/belleza`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >
-                    <a className="nav-link active" aria-current="page">
-                      Belleza
-                    </a>
+                  <NavLink to={`category/belleza`} class={({isActive}) => isActive ? 'ActiveOption' : 'Option'} className="nav-link active" aria-current="page">
+                    Belleza
                   </NavLink>
                   </li>
                   <li className="nav-item">
                   
-                  <NavLink to={`category/limpieza`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >
-                    <a className="nav-link active" aria-current="page">
-                      Limpieza
-                    </a>
+                  <NavLink to={`category/limpieza`} class={({isActive}) => isActive ? 'ActiveOption' : 'Option'} className="nav-link active" aria-current="page">
+                    Limpieza
                   </NavLink>
                   </li>
                   <li className="nav-item">
                   
-                  <NavLink to={`category/cuidadoPersonal`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >
-                    <a className="nav-link active" aria-current="page">
-                      Cuidado Personal
-                    </a>
+                  <NavLink to={`category/cuidadoPersonal`} class={({isActive}) => isActive ? 'ActiveOption' : 'Option'} className="nav-link active" aria-current="page">
+                    Cuidado Personal
                   </NavLink>
                   </li>
                   <li className="nav-item">
                   
-                  <NavLink to={`category/nutricionYDeportes`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >
-                    <a className="nav-link active" aria-current="page">
-                      Nutrición y Deportes
-                    </a>
+                  <NavLink to={`category/nutricionYDeportes`} class={({isActive}) => isActive ? 'ActiveOption' : 'Option'} className="nav-link active" aria-current="page">
+                    Nutrición y Deportes
                   </NavLink>
                   </li>
                 </ul>
 
-
-
-                
                 <CartWidget />
               </div>
           </div>

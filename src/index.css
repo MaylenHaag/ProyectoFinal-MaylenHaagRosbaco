@@ -38,3 +38,9 @@ code {
   height: 158px;
   width: 155px;
 }
+
+.carrito{
+  background-color: azure;
+  color: black;
+  border-radius: 5px;
+}

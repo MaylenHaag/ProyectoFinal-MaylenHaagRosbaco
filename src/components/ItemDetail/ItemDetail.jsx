@@ -13,7 +13,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
         setQuantityAdded(quantity)
 
         const item = {
-            id, name, price, img
+            id, name, price, img, description
         }
 
         addItem(item, quantity)
@@ -37,13 +37,18 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                         Precio :${price}
                     </p>
                     <p>
+                        Descripcion: {description}
+                    </p>
+                    <p>
                         Stock disponible: {stock}
                     </p>
                 </section>
                 <footer>
                     {
                         quantityAdded > 0 ? (
-                            <Link to='/cart' className='Option'>Terminar compra</Link>
+                            <button>
+                                <Link to='/cart' className='Option'>Terminar compra</Link>
+                            </button>
                         ) : (
                             <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                         )

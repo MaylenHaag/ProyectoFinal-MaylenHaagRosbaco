@@ -4,7 +4,7 @@ import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { useState } from "react"
 import { Timestamp } from "firebase/firestore"
-import CheckoutForm from '../CheckoutForm/CheckoutForm'
+import CheckoutForm from "../CheckoutForm/CheckoutForm"
 
 
 const Checkout = () => {
@@ -22,7 +22,7 @@ const Checkout = () => {
                     name, phone, email
                 },
                 items: cart,
-                total,
+                total: total,
                 date: Timestamp.fromDate(new Date())
             }
 
@@ -86,8 +86,8 @@ const Checkout = () => {
 
     return (
         <div>
-        <h1>Checkout</h1>
-        <CheckoutForm onConfirm={createOrder}/>
+            <h1>Checkout</h1>
+            <CheckoutForm onConfirm={createOrder}/>
         </div>
     )
 }
