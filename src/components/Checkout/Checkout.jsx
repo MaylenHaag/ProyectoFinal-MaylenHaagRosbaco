@@ -4,7 +4,7 @@ import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { useState } from "react"
 import { Timestamp } from "firebase/firestore"
-import CheckoutForm from "../CheckoutForm/CheckoutForm"
+import CheckoutForm from '../CheckoutForm/CheckoutForm'
 
 
 const Checkout = () => {
@@ -12,8 +12,6 @@ const Checkout = () => {
     const [orderId, setOrderId] = useState('')
 
     const { cart, total, clearCart } = useContext(CartContext)
-
-    //const navigate = useNavigate()
 
     const createOrder = async ({ name, phone, email}) => {
         setLoading(true)
@@ -65,7 +63,6 @@ const Checkout = () => {
                 setOrderId(orderAdded.id)
                 clearCart()
 
-                //navigate('/')
             } else {
                 console.error('los productos estan fuera de stock');
             }
